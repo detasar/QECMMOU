@@ -21,7 +21,7 @@ Our methodology demonstrates how a classical multi-output regressor—e.g., a ra
 
 ## Repository Structure
 
-- **`data_generation.ipynb`**  
+- **`data_generation`**  
   *Generates synthetic quantum-circuit datasets.*  
   - **Random 2-Qubit Circuits**: Creates random circuits with user-specified depth range, gate variety, and number of shots.  
   - **Multi-Basis Measurements**: (Optional) Measures the circuit output in additional bases (**X**, **Y**).  
@@ -30,7 +30,7 @@ Our methodology demonstrates how a classical multi-output regressor—e.g., a ra
   - **Duplicate Dropping**: Ensures unique feature rows.  
   - **Saves** the resulting arrays to `.npz` or `.pkl` files.
 
-- **`modeling_conformal.ipynb`**  
+- **`modeling_conformal`**  
   *Implements multi-output regression and conformal coverage.*  
   - **Data Loading**: Reads the `.npz` or `.pkl` dataset from the data-generation notebook.  
   - **Train–Cal–Test Splits**: Typically splits data into 70% training, 15% calibration, 15% test sets.  
