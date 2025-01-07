@@ -60,13 +60,13 @@ Simply open each `.ipynb` notebook in Colab.
 
 ---
 ## Usage Instructions
-1. **Notebook A: Data Generation**
+1. **Data Generation**
 
 * **Edit** `num_samples`, `shots`, `min_depth`, `max_depth`, or other parameters at the top.
 **Run** all cells to produce a dataset.
 The notebook saves a `.npz` or `.pkl` file with `(X_data, Y_data)` arrays.
 
-2. **Notebook B: Modeling + Conformal**
+2. **Modeling + Conformal**
 
 * **Specify** the dataset filename you created (e.g., `"quantum_data_no_duplicates.npz"`).
 * **Run** the cells to:
